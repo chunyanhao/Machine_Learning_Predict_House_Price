@@ -38,4 +38,7 @@ RMSE between the logarithm of the predicted value and the logarithm of the obse
 * sqft_lot15 - The square footage of the land lots of the nearest 15 neighbors 
 
 ### 4. Mothods summary
-#### 1. 
+#### 1) Feature Engineering
+By creating distribution plot for each variable and check the distribution of values, we found that some data cleaning work are need before we can use them directly into the model fitting.
+For example: the right tail of house price is extremly long, which
+<img src="./images/price_hist.png" alt="price_hist" style="width: 600px;"/>
