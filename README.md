@@ -40,5 +40,24 @@ RMSE between the logarithm of the predicted value and the logarithm of the obse
 ### 4. Mothods summary
 #### 1) Feature Engineering
 By creating distribution plot for each variable and check the distribution of values, we found that some data cleaning work are need before we can use them directly into the model fitting.
-For example: the right tail of house price is extremly long, which
+
+For example: the right tail of house price is extremly long, which indicates feature of positive skew. Here we remove the right hand side outliers beyond 3*std away from its mean value.
 <img src="./images/price_hist.png" alt="price_hist" style="width: 600px;"/>
+Besides, we create extra variables to better represents the house's feature, like age of the house, distance from downtown. 
+#### 2) Data Visualization
+Part we focuse on both the distribution of house features themselves, and their realationship with house price. 
+
+We use histogram to show the features' own distribution, and use scatter plot to show their realationship with house price:
+We notice that after remove the rhs outlier and tranfer to log scale, the distribution of house price is close to a normal distribution.
+The relationship between these features and price are various:
+image
+image
+#### 3)Feature Selection and Model Fitting
+This part we implement cross-validation and take RMSE as accuracy matric to evaluate the model performance
+We maily adpoted three models:
+* Linear Regression
+* Regression Tree
+* Random Forest
+The accuracy matric results shows that linear reagression model fitts the dateset better than the other ones
+
+Finally we also finished the price prediction for the test set.
