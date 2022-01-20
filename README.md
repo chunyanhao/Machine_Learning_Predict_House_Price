@@ -68,3 +68,9 @@ We maily adpoted three models:
 The accuracy matric results shows that linear reagression model fitts the dateset better than the other ones
 
 Finally we also finished the price prediction for the test set.
+
+### 5. Authors
+Chunyan Hao
+MS in Data Analytics Engineering
+Northeastern University
+chunyan.hao123@gmail.com
