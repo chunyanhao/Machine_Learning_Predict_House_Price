@@ -1,6 +1,6 @@
 # Predicting Housing Prices in King County
 
-### 0.Project Description
+### 0. Project Description
 This Project aims to apply the data science concepts and machine learning methods to practice. We are trying to solve problems and gain insights in real-world settings.
 
 This home dataset contains house sale prices for King County, which includes Seattle. It includes homes sold between May 2014 and May 2015. The dataset consists of following variables
