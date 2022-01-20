@@ -61,18 +61,24 @@ What's more, I notice that the relationship between these features and price are
 <img src="./images/sqft_lot_vs_price_log.png" alt="sqft_lot_vs_price_log" style="width: 400px;"/><img src="./images/grade_vs_price_log.png" alt="grade_vs_price_log" style="width: 400px;"/>
 
 #### 3)Feature Selection and Model Fitting
-This part I implement cross-validation and take RMSE as accuracy matric to evaluate the model performance
+This part I implement cross-validation and take RMSE as accuracy metric to evaluate the model performance
 I mainly adopted three models:
 * Linear Regression
 * Regression Tree
+For example, by building the regression tree model, we figure out that the most important features to decide the house price are grades, distance_from downtown and sqft_living:
+<img src="./images/full_tree.png" alt="full_tree" style="width: 1200px;"/>
+
 * Random Forest
 
-The accuracy matric results shows that linear regression model fits the dataset better than the other ones
+The accuracy metric results shows that linear regression model fits the dataset better than the other ones
 
 Finally I also finished the price prediction for the test set.
 
 ### 5. Authors
 Chunyan Hao
+
 MS in Data Analytics Engineering
+
 Northeastern University
+
 chunyan.hao123@gmail.com
